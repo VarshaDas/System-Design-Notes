@@ -1,6 +1,9 @@
 
 # Detailed Brief on Message Queue, Async, Pub/Sub
 
+![image](https://github.com/user-attachments/assets/95baf880-f0d8-49ed-978c-b805d49bc5c5)
+
+
 ## Asynchronous Processing
 
 ### What is Asynchronous Processing?
@@ -39,6 +42,9 @@ A message queue is a communication method used in software systems to send and r
 2. **Queue**: The message queue holds the messages until they are processed by consumers.
 3. **Consumers**: These are components or services that retrieve and process messages from the queue.
 
+   ![image](https://github.com/user-attachments/assets/59995a86-b327-4e3f-9408-399fc1992007)
+
+
 ### Benefits of Message Queues
 
 - **Decoupling**: Producers and consumers are decoupled, allowing them to operate independently.
@@ -60,6 +66,9 @@ A message queue is a communication method used in software systems to send and r
 ### What is Pub/Sub?
 
 The publish/subscribe (pub/sub) model is a messaging pattern where publishers send messages to a central topic or channel, and subscribers receive messages from that topic or channel. Publishers and subscribers are decoupled and do not need to know about each other.
+
+![image](https://github.com/user-attachments/assets/8e366903-b203-4486-a4e6-a12ef4e0b04d)
+
 
 ### How Does Pub/Sub Work?
 
