@@ -5,7 +5,8 @@
 
 ### What is Asynchronous Processing?
 
-Asynchronous processing allows tasks to be executed without blocking the main execution flow. Instead of waiting for a task to complete, the system can continue to process other tasks.
+Asynchronous processing allows tasks to be executed without blocking the main execution flow. 
+Instead of waiting for a task to complete, the system can continue to process other tasks.
 
 ### How Does Asynchronous Processing Work?
 
@@ -202,5 +203,5 @@ Understanding message queues, asynchronous processing, and pub/sub models is ess
   - You are building an event-driven architecture.
   - Multiple systems or services need to react to the same events.
  
-- 
+
 
