@@ -28,9 +28,24 @@ An online banking system must be available to allow customers to access their ac
 
 **Strategies to Improve Availability:**
 
-- **Failover Systems:** Automatically switch to a backup system in case of failure.
-- **Load Balancing:** Distribute traffic across multiple servers to ensure no single server becomes a bottleneck.
-- **Monitoring and Alerts:** Continuously monitor system performance and alert administrators to potential issues.
+
+Improving the availability of a system means ensuring it is up and running as much as possible. Here are some strategies to achieve this:
+
+1. **Redundancy**: Use backup systems to take over if the main system fails. This can include hardware (like servers) and data (like databases).
+
+2. **Load Balancing**: Distribute the workload across multiple servers so that no single server becomes a point of failure.
+
+3. **Failover Systems**: Have automatic switchovers to a standby system if the primary system fails. This ensures minimal downtime.
+
+4. **Regular Maintenance**: Keep your systems up to date with the latest patches and updates. This helps prevent failures due to outdated software or hardware.
+
+5. **Monitoring and Alerts**: Use tools to continuously monitor your systems. Set up alerts for any unusual activity or potential issues, so you can address them before they cause downtime.
+
+6. **Disaster Recovery Plan**: Have a plan in place for recovering from major failures, such as data loss or natural disasters. This includes regular backups and a process for restoring data.
+
+7. **High Availability Architecture**: Design your system to have no single points of failure. This can include using multiple data centers in different geographic locations.
+
+
 
 
 ## Availability in Sequence vs Parallel
