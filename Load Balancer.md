@@ -5,6 +5,12 @@
 
 A load balancer is a system or device that distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed. This improves the performance, reliability, and availability of applications by spreading the load and ensuring that no single server bears too much demand.
 
+To utilize full scalability and redundancy, we can try to balance the load at each layer of the system. We can add LBs at three places:
+
+- Between the user and the web server
+- Between web servers and an internal platform layer, like application servers or cache servers
+- Between internal platform layer and database.
+
 ## Use Cases:
 
 - **Web Applications:** To handle web traffic and improve the performance of websites and web applications.
@@ -37,20 +43,43 @@ A load balancer is a system or device that distributes network or application tr
 ![image](https://github.com/user-attachments/assets/cf553f53-dfac-447e-bf0b-dce5bd7053ca)
 
 
-### Hardware Load Balancers:
 
-- **Dedicated Devices:** Physical devices specifically designed for load balancing tasks.
-- **High Performance:** Often used in large enterprise environments due to their robust performance and features.
+1. **Hardware Load Balancers:**
+   - These are physical devices dedicated to load balancing tasks.
+   - They offer high performance and reliability but can be expensive and less flexible compared to software solutions.
+   - Examples: F5 Networks, Citrix ADC (formerly NetScaler).
 
-### Software Load Balancers:
+2. **Software Load Balancers:**
+   - These are software applications installed on standard servers to perform load balancing.
+   - They are more flexible and cost-effective than hardware load balancers.
+   - Examples: HAProxy, NGINX, Apache Traffic Server.
 
-- **Flexible Solutions:** Software-based solutions that can be installed on standard servers or virtual machines.
-- **Cost-Effective:** Typically more cost-effective than hardware load balancers and suitable for a wide range of use cases.
+3. **Virtual Load Balancers:**
+   - These are software-based load balancers that run on virtual machines or in the cloud.
+   - They offer the flexibility of software load balancers with the added benefits of virtualization, such as easier scaling and management.
+   - Examples: VMware NSX, Citrix ADC VPX.
 
-### Cloud-Based Load Balancers:
+4. **Cloud Load Balancers:**
+   - These are managed load balancing services provided by cloud providers.
+   - They offer high scalability, ease of use, and integration with other cloud services.
+   - Examples: AWS Elastic Load Balancing (ELB), Google Cloud Load Balancing, Azure Load Balancer.
 
-- **Managed Services:** Provided by cloud service providers (e.g., AWS Elastic Load Balancing, Azure Load Balancer).
-- **Scalable:** Easily scalable and integrated with other cloud services.
+5. **Global Server Load Balancers (GSLB):**
+   - These distribute traffic across multiple geographic locations or data centers.
+   - They help improve performance and availability by directing users to the nearest or best-performing data center.
+   - Examples: Akamai, Cloudflare, AWS Global Accelerator.
+
+6. **Layer 4 Load Balancers (Transport Layer):**
+   - These operate at the transport layer (Layer 4) of the OSI model, balancing traffic based on IP addresses and TCP/UDP ports.
+   - They are efficient and fast but provide less granular control over traffic.
+   - Examples: AWS Network Load Balancer (NLB), F5 BIG-IP LTM.
+
+7. **Layer 7 Load Balancers (Application Layer):**
+   - These operate at the application layer (Layer 7) of the OSI model, balancing traffic based on application-level data such as HTTP headers, cookies, and URLs.
+   - They offer more advanced features like SSL termination, content switching, and web application firewall (WAF) integration.
+   - Examples: AWS Application Load Balancer (ALB), NGINX, HAProxy.
+
+
 
 ## Common Load Balancing Algorithms:
 
