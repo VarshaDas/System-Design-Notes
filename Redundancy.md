@@ -3,6 +3,8 @@
 **Definition:**  
 Redundancy involves having additional or duplicate components within a system to ensure it continues to function if a primary component fails. It is a key strategy to achieve high availability.
 
+The goal of redundancy is to ensure that the system can continue to function even in the event of failures or disruptions.
+
 ![image](https://github.com/user-attachments/assets/20532435-09d8-4bbb-ac1c-09830fe35d41)
 
 
@@ -12,17 +14,7 @@ Redundancy involves having additional or duplicate components within a system to
 - **Network Redundancy:** Multiple network paths or devices to ensure continued connectivity if one path fails. Examples include having multiple ISPs or routers.
 - **Data Redundancy:** Storing copies of data in multiple locations or formats to prevent data loss. Examples include database replication and backup systems.
 
-**Common Redundancy Configurations:**
 
-- **Active-Passive:** One component (active) handles all the load, while the other (passive) remains idle until needed.
-- **Active-Active:** Multiple components handle load simultaneously, providing both performance benefits and failover capability.
-
-# System Design 101 - Redundancy
-
-## Introduction
-Redundancy is an important concept in system design that refers to the duplication of critical components or processes in a system. The goal of redundancy is to ensure that the system can continue to function even in the event of failures or disruptions.
-
-Redundancy can be applied to various aspects of a system, such as hardware, software, data, and network infrastructure.
 
 ## Types of Redundancy
 
