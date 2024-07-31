@@ -18,6 +18,23 @@ To utilize full scalability and redundancy, we can try to balance the load at ea
 - **Databases:** To balance database queries and enhance database scalability and reliability.
 
 
+# When to Use a Load Balancer
+
+
+1. **High Traffic Volumes:**
+   - When your application experiences a large amount of incoming traffic, a load balancer distributes the load across multiple servers, preventing any single server from becoming overwhelmed.
+
+2. **Improving Availability:**
+   - To ensure high availability and minimize downtime, a load balancer distributes traffic across multiple servers. If one server fails, the load balancer directs traffic to the remaining operational servers.
+
+3. **Scalability:**
+   - When you need to scale your application to handle increased traffic, a load balancer allows you to add or remove servers easily without disrupting service.
+
+4. **Enhanced Performance:**
+   - By balancing the load among multiple servers, a load balancer improves application performance and response times, as no single server is burdened with too many requests.
+
+
+
 ## Key Functions:
 
 ### Traffic Distribution:
