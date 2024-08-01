@@ -5,6 +5,11 @@ Redundancy involves having additional or duplicate components within a system to
 
 The goal of redundancy is to ensure that the system can continue to function even in the event of failures or disruptions.
 
+Example:
+
+Multiple Servers: Having several servers running the same application. 
+If one server fails, the others can handle the load.
+
 ![image](https://github.com/user-attachments/assets/20532435-09d8-4bbb-ac1c-09830fe35d41)
 
 
@@ -48,10 +53,7 @@ Network redundancy involves duplicating critical network components or processes
 - **Network Load Balancing:** Distributing network traffic across multiple network paths, with each path handling a portion of the traffic. If one path fails, the remaining paths can continue to handle the traffic without interruption.
 
 Network redundancy is important for systems that rely on network connectivity, such as web applications.
-
-
-### Identify Critical Components
-The first step in implementing redundancy is to identify the critical components or processes that need redundancy. 
+ 
 
 ### Choose the Right Type of Redundancy
 The first step in implementing redundancy is to identify the critical components or processes that need redundancy. 
