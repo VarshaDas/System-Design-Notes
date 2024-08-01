@@ -29,7 +29,38 @@ Hardware redundancy involves duplicating critical components of a system to ensu
 - **Hot Standby or Active-Passive:** One component (active) handles all the load, while the other (passive) remains idle until needed. Having a standby system that is ready to take over in the event of a failure of the primary system. The standby system is kept in sync with the primary system and can be quickly activated when needed.
 - **Active-Active:** Multiple components handle load simultaneously, providing both performance benefits and failover capability. Multiple systems are active at the same time, with each system handling a portion of the workload. If one system fails, the remaining systems can continue to handle the workload without interruption.
 
-Hardware redundancy can be expensive to implement, as it requires additional hardware components and infrastructure
+Hardware redundancy can be expensive to implement, as it requires additional hardware components and infrastructure.
+
+# Active-Active vs Active-Passive Failover
+
+## Active-Active Failover
+
+In an active-active setup, all nodes handle traffic and tasks simultaneously. If one node fails, others continue handling the workload.
+
+**When to Use Active-Active:**
+- **High Traffic Systems**: Requires load balancing across multiple servers.
+- **Low Tolerance for Downtime**: Ensures continuous availability.
+- **Scalability**: Needed to handle increasing load.
+- **Critical Applications**: For applications where any delay is unacceptable.
+
+**Example:**
+- **Web Hosting**: Multiple web servers handle requests. If one fails, others continue without downtime.
+
+## Active-Passive Failover
+
+In an active-passive setup, only one node handles traffic while others are on standby. If the active node fails, a passive node takes over.
+
+**When to Use Active-Passive:**
+- **Lower Traffic Systems**: Single server can handle traffic.
+- **Cost Considerations**: Passive nodes use fewer resources.
+- **Simpler Configuration**: Easier to manage.
+- **Non-Critical Applications**: Acceptable short delay in failover.
+
+**Example:**
+- **Database Servers**: Primary server handles queries; secondary is on standby. If primary fails, secondary takes over with minimal downtime.
+
+
+
 
 ### Software Redundancy
 Software redundancy involves duplicating critical software components or processes to ensure that the system can continue to operate even in the event of software failures. This can be achieved through various methods, such as:
