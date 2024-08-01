@@ -1,6 +1,5 @@
 ## Reliability
 
-**Definition:**  
 Reliability refers to the ability of a system to consistently perform its intended functions without failure over a specified period. It measures the likelihood that a system will continue to operate correctly.
 
 A reliable system can perform its function, tolerate errors, and prevent unauthorized access or abuse. 
