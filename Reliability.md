@@ -15,6 +15,32 @@ Most failures in distributed systems come from either:
 Hardware errors: Network outages, server failure, etc. These won't be fixed quickly, and are often called non-transient errors.
 Application errors: Bugs, failure to accommodate spikes in traffic, etc. These should resolve quickly and are also known as transient errors.
 
+# Why Reliability is Important
+
+Reliability in systems is crucial for several reasons:
+
+## 1. **User Trust**
+
+Reliable systems build trust with users. When users know they can depend on your system to be available and function correctly, they are more likely to continue using it and recommend it to others.
+
+## 2. **Business Continuity**
+
+Reliable systems ensure that business operations run smoothly without interruptions. Downtime can lead to significant financial losses and operational inefficiencies.
+
+## 3. **Customer Satisfaction**
+
+High reliability leads to better customer satisfaction. Users expect systems to be available and responsive. Unreliable systems can frustrate users and lead to a loss of customers.
+
+## 4. **Cost Savings**
+
+Preventing downtime through reliable systems can save costs associated with emergency repairs, lost revenue, and compensations to affected customers.
+
+## 5. **Compliance**
+
+Many industries have regulatory requirements for system reliability. Ensuring high reliability helps in meeting compliance standards and avoiding legal penalties.
+
+
+
 **Key Concepts:**
 
 - **Mean Time Between Failures (MTBF):** Average time between system failures.
