@@ -3,6 +3,30 @@
 ![image](https://github.com/user-attachments/assets/7c4c8908-dae3-4124-a8e9-8ad3a432a678)
 
 
+
+# Real World Examples of Load Balancers
+
+## Amazon Web Services (AWS) Elastic Load Balancer (ELB)
+- Distributes incoming application traffic across multiple Amazon EC2 instances.
+- Helps improve the fault tolerance and availability of applications.
+
+## Google Cloud Load Balancing
+
+## Microsoft Azure Load Balancer
+
+## F5 BIG-IP
+- A hardware and software-based load balancer used in many enterprises.
+- Provides application delivery networking and security solutions.
+
+## NGINX
+- An open-source software load balancer that is also used as a web server and reverse proxy.
+- Widely used in many small and large-scale deployments due to its high performance and flexibility.
+
+## HAProxy
+- An open-source load balancer often used in high-availability setups.
+- Known for its reliability and performance in handling large volumes of traffic.
+
+
 A load balancer is a system or device that distributes network or application traffic across multiple servers to ensure no single server becomes overwhelmed. This improves the performance, reliability, and availability of applications by spreading the load and ensuring that no single server bears too much demand.
 
 To utilize full scalability and redundancy, we can try to balance the load at each layer of the system. We can add LBs at three places:
