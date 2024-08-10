@@ -35,6 +35,23 @@ To utilize full scalability and redundancy, we can try to balance the load at ea
 - Between web servers and an internal platform layer, like application servers or cache servers
 - Between internal platform layer and database.
 
+## Where to Place the Load Balancer
+
+### Between Clients and Application Instances
+The most common setup is to place the load balancer between the clients and the backend instances. This allows the load balancer to distribute incoming traffic evenly across all available instances of your Spring Boot application.
+
+### At the Application Gateway
+If you're using an API Gateway (like Zuul or Spring Cloud Gateway), the load balancer can be placed before the gateway. This way, the load is balanced before it even reaches the gateway, which then routes the requests to the correct service.
+
+## Example Scenarios
+
+### Monolithic Application
+If your Spring Boot app is running as a monolith, the load balancer will distribute incoming requests across multiple instances of this single application.
+
+### Microservices Architecture
+In a microservices setup, the load balancer can be used to distribute traffic across different instances of a specific microservice. It can also be part of the service discovery mechanism, routing requests to the correct service based on its availability.
+
+
 ## Use Cases:
 
 - **Web Applications:** To handle web traffic and improve the performance of websites and web applications.
