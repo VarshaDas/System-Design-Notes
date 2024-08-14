@@ -4,6 +4,41 @@
 ![image](https://github.com/user-attachments/assets/95baf880-f0d8-49ed-978c-b805d49bc5c5)
 
 
+# Why should you care?
+
+### Scenario: E-ticket booking
+
+Imagine you’re using an online platform to book tickets for a movie or an event. Once you select your seats and make the payment, several tasks need to happen:
+
+- The system needs to confirm the seat reservation in the database.
+- A confirmation email or SMS should be sent to you with the ticket details.
+- The ticketing system might need to notify the venue about the booking.
+- If it’s a popular event, the system might also need to update the availability status in real-time.
+
+If all these tasks were handled immediately after payment, it could slow down the process, leading to delays in showing you the confirmation page.
+
+Instead, after you make the payment, the booking details (like your selected seats, contact information, and payment confirmation) are placed into a message queue. You’re then instantly redirected to a confirmation page that says, "Your booking is successful! Check your email or SMS for ticket details."
+
+
+
+### Scenario: Processing Orders in an Online Store
+
+When you place an order on an online store, several tasks need to be completed:
+
+- The system needs to record the order in the database.
+- An order confirmation email with the receipt should be sent to you.
+- The inventory system needs to be updated to reflect the sold items.
+- The order details should be sent to the warehouse for packing and shipping.
+
+Handling all these tasks immediately after you place the order could slow down the process and delay the confirmation page from appearing.
+
+Instead, after you place your order, the order details (like the items purchased, shipping address, and payment information) are placed into a message queue. You’re then immediately redirected to a confirmation page that says, "Thank you for your order! We’ll send you an email with the details shortly."
+
+
+
+
+
+
 ## Asynchronous Processing
 
 ### What is Asynchronous Processing?
@@ -17,7 +52,7 @@ Instead of waiting for a task to complete, the system can continue to process ot
 2. **Task Execution**: The task is executed independently of the main execution flow.
 3. **Callback or Notification**: Once the task is completed, a callback function or notification mechanism informs the main flow about the completion.
 
-### Benefits of Asynchronous Processing
+### Why  Asynchronous Processing
 
 - **Improved Performance**: The system can handle other tasks while waiting for long-running tasks to complete.
 - **Resource Utilization**: System resources are used more efficiently, as they are not idly waiting for tasks to finish.
