@@ -2,9 +2,10 @@
 
 ## Locality of Reference Principle
 
-Caching takes advantage of the **locality of reference** principle, which states that recently requested data is likely to be requested again. This principle underpins many caching strategies and is key to optimizing system performance.
+Caching takes advantage of the **locality of reference** principle, which states that recently requested data is likely to be requested again. 
 
-### Example Around You
+
+### Examples Around You
 
 - **Music Streaming:** When you listen to a song on a music streaming app like Spotify, the app temporarily caches the song data on your device. If you play the song again, it loads instantly from the cache, saving time and reducing data usage.
 
@@ -23,9 +24,6 @@ Caching takes advantage of the **locality of reference** principle, which states
 4. **Social Media Platforms:** Suggested stories or friend recommendations are often pre-generated based on user behavior and cached, so they can be quickly served to users when they log in.
 
 ---
-
-
-
 
 
 ## What is Caching?
