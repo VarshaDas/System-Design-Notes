@@ -93,19 +93,6 @@ The main function of a CDN is to deliver content (such as images, videos, HTML, 
 - **Google Cloud CDN**: Integrated with Google Cloud Platform for easy deployment.
 - **Fastly**: Known for real-time content delivery and dynamic content acceleration.
 
-## Challenges and Considerations
-
-1. **Cost**:
-   - Using a CDN can incur additional costs, especially for high-traffic websites. It's essential to evaluate the cost-benefit ratio.
-
-2. **Cache Invalidation**:
-   - Ensuring that updated content is quickly propagated across all edge servers can be challenging.
-
-3. **Complexity**:
-   - Integrating a CDN into an existing infrastructure might require configuration and optimization efforts.
-
-4. **Security**:
-   - While CDNs can enhance security, they also introduce potential new points of vulnerability. It's crucial to ensure that security measures are in place.
 
 
 ## Push vs Pull CDN
@@ -127,21 +114,21 @@ Push CDNs involve manually uploading content to the CDN servers. When new conten
 **Steps**:
 
 
--You prepare your website’s static assets, such as product images (e.g., product1.jpg, product2.jpg), promotional banners, and downloadable PDF brochures.
+- You prepare your website’s static assets, such as product images (e.g., product1.jpg, product2.jpg), promotional banners, and downloadable PDF brochures.
 
--Using the CDN provider’s dashboard or API, you upload these static assets to the CDN’s edge servers. You might use a tool or script provided by the CDN to automate this process.
+- Using the CDN provider’s dashboard or API, you upload these static assets to the CDN’s edge servers. You might use a tool or script provided by the CDN to automate this process.
 Example: You upload product1.jpg, product2.jpg, and brochure.pdf to the CDN.
 
--Update your website to use the CDN URLs for these assets instead of hosting them on your origin server. For instance, instead of linking to http://yourwebsite.com/images/product1.jpg, you would use http://cdn.yourcdnprovider.com/images/product1.jpg.
+- Update your website to use the CDN URLs for these assets instead of hosting them on your origin server. For instance, instead of linking to http://yourwebsite.com/images/product1.jpg, you would use http://cdn.yourcdnprovider.com/images/product1.jpg.
 
--Configure cache settings on the CDN. You might set rules to cache these images and PDFs for a specific period, such as 30 days, before checking for updates.
+- Configure cache settings on the CDN. You might set rules to cache these images and PDFs for a specific period, such as 30 days, before checking for updates.
 Example: You configure the CDN to cache images for 30 days and the brochure for 15 days.
 Content Delivery:
 
--When users visit your website, their browsers request images and other assets from the CDN. The CDN’s edge servers serve these assets from locations close to the users, reducing load times.
+- When users visit your website, their browsers request images and other assets from the CDN. The CDN’s edge servers serve these assets from locations close to the users, reducing load times.
 Example: A user in New York requests product1.jpg. The request is routed to the nearest CDN edge server in New York, which serves the image quickly.
 
--When you update your website (e.g., replacing product1.jpg with a new version), you push the new image to the CDN. The CDN updates the cached version according to the cache expiration settings.
+- When you update your website (e.g., replacing product1.jpg with a new version), you push the new image to the CDN. The CDN updates the cached version according to the cache expiration settings.
 Example: You upload a new product1.jpg to the CDN. The CDN replaces the old cached version with the new one.
 
 **Benefits:**
@@ -164,6 +151,21 @@ Pull CDNs update their cache based on user requests. When a user requests conten
 - **Caching:** The fetched content is then cached on the CDN’s edge servers for future requests.
 - **Cache Updates:** The CDN cache is updated automatically based on user requests, reducing the need for manual content management.
 
+You operate a news website that publishes articles, images, and videos throughout the day. Content updates frequently as new articles are published and old ones are archived. You need a solution that handles high traffic and dynamic content updates efficiently.
+
+Steps:
+
+
+- A user visits your news website and requests to view an article or image. This request is initially directed to the CDN.
+
+- The Pull CDN checks if the requested content is already cached on its edge servers. If it is, the content is served directly to the user from the edge server.
+
+- If the content is not in the cache or is outdated, the CDN fetches it from your origin server. The origin server provides the latest version of the content.
+
+- The CDN caches the fetched content on its edge servers for subsequent requests and delivers it to the user. The cached version will be used for future requests until it expires or is refreshed.
+
+- The CDN automatically handles cache updates based on user requests. When content changes on the origin server, the CDN fetches the updated version as needed.
+
 **Benefits:**
 - **Reduced Maintenance:** Less manual intervention is required since the CDN automatically updates its cache based on incoming requests.
 - **Scalability:** Ideal for sites with high traffic or dynamic content where managing frequent content updates manually would be impractical.
@@ -177,7 +179,6 @@ Pull CDNs update their cache based on user requests. When a user requests conten
 ### Comparison
 
 **Push CDNs vs. Pull CDNs:**
-
 
 
 - **Maintenance:** Push CDNs require manual content management, while Pull CDNs automate content updates.
