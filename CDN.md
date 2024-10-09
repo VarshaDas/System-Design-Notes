@@ -11,6 +11,7 @@ Content Delivery Network (CDN) increases content availability and redundancy whi
 
 A Content Delivery Network (CDN) is a system of distributed servers that deliver web content and other media to users based on their geographic location. The primary goal of a CDN is to reduce latency and improve the load time of web pages by serving content from a server that is geographically closer to the user.
 
+
 ## Examples
 
 1. **Video Streaming Services**  
